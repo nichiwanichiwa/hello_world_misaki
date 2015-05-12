@@ -12,42 +12,43 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="ホーム"
-        android:id="@+id/button4"
+        android:id="@+id/homeb"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="39dp" />
 
     <Button
         style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="非常食"
-        android:id="@+id/button9"
-        android:layout_alignTop="@+id/button4"
-        android:layout_toRightOf="@+id/button4"
-        android:layout_toEndOf="@+id/button4"
-        android:layout_marginLeft="33dp"
-        android:layout_marginStart="33dp" />
+        android:id="@+id/hijob"
+        android:layout_alignTop="@+id/homeb"
+        android:layout_toLeftOf="@+id/karoributton"
+        android:layout_toRightOf="@+id/homeb"
+        android:layout_toEndOf="@+id/homeb" />
 
     <Button
         style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="備蓄品"
-        android:id="@+id/button10"
-        android:layout_alignTop="@+id/button9"
-        android:layout_toRightOf="@+id/button9"
-        android:layout_toEndOf="@+id/button9" />
+        android:id="@+id/bichikub"
+        android:layout_alignTop="@+id/hijob"
+        android:layout_toRightOf="@+id/hijob"
+        android:layout_toLeftOf="@+id/okasibutton"
+        android:layout_toStartOf="@+id/okasibutton" />
 
     <Button
         style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="設定"
-        android:id="@+id/button11"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:id="@+id/settingb"
+        android:layout_alignTop="@+id/bichikub"
+        android:layout_alignRight="@+id/textView17"
+        android:layout_alignEnd="@+id/textView17" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -71,7 +72,6 @@
         android:layout_height="wrap_content"
         android:text="主食"
         android:id="@+id/textView24"
-        android:layout_marginTop="21dp"
         android:textSize="25dp"
         android:layout_below="@+id/textView17"
         android:layout_alignParentLeft="true"
@@ -83,8 +83,8 @@
         android:text="※1週間21食分必要"
         android:id="@+id/textView25"
         android:layout_alignBottom="@+id/textView24"
-        android:layout_toRightOf="@+id/button4"
-        android:layout_toEndOf="@+id/button4" />
+        android:layout_toRightOf="@+id/homeb"
+        android:layout_toEndOf="@+id/homeb" />
 
     <ImageButton
         android:layout_width="80dp"
@@ -128,10 +128,9 @@
         android:text="主菜"
         android:id="@+id/textView26"
         android:textSize="25dp"
-        android:layout_marginTop="19dp"
         android:layout_below="@+id/ImageButton"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignLeft="@+id/textView12"
+        android:layout_alignStart="@+id/textView12" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -182,11 +181,10 @@
         android:layout_height="wrap_content"
         android:text="その他"
         android:id="@+id/textView28"
+        android:textSize="25dp"
         android:layout_below="@+id/kandumebutton2"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="20dp"
-        android:textSize="25dp" />
+        android:layout_alignParentStart="true" />
 
     <ImageButton
         android:layout_width="80dp"
